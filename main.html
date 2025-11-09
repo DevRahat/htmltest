@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-.hero {
-  width: 100%;
-  height: 100vh;
-  background-image: url('./premium_photo-1712685912272-96569030d1d7.avif');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-}
+      .hero {
+        width: 100%;
+        height: 100%;
+        background-image: url("./premium_photo-1712685912272-96569030d1d7.avif");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center; /* horizontal center */
+        align-items: center; /* vertical center */
+      }
+      .main_section {
+        display: flex;
+        gap: 20px;
+      }
 
-.content-box{
-  background: rgba(255,255,255,.55); /* optional glass style */
-  padding: 40px;
-  border-radius:20px;
-  width:50%;
-}
-</style>
-</head>
+      .content-box {
+        background: rgba(255, 255, 255, 0.55); /* optional glass style */
+        padding: 40px;
+        border-radius: 20px;
+        width: 50%;
+      }
+      #navbar {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer_section{
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .copyright{
+        text-align: center;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
 
-<body>
-<div class="hero">
-    <div class="content-box">
-        <h1>Welcome to My Website</h1>
-        <p>This is a sample hero section with centered content.</p>
+  <body>
+    <div class="hero">
+      <div class="content-box">
+        <header>This is Header</header>
+        <nav id="navbar">
+          <div>Home</div>
+          <div>About</div>
+          <div>Services</div>
+          <div>Contact</div>
+        </nav>
+        <div class="main_section">
+          <div>
+            <h1>Welcome to My Website</h1>
+            <p>
+              This is a sample hero section with centered content. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Magnam accusamus nam,
+              commodi voluptates labore cupiditate? Veritatis debitis neque iste
+              unde explicabo fugiat, odio, Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Itaque quaerat modi dolore
+              reprehenderit deleniti alias, nostrum ipsa, quas magnam quo animi
+              enim sit recusandae ipsum corporis perferendis voluptates qui
+              rerum. tenetur nobis officia doloremque tempora ratione iusto!
+            </p>
+          </div>
+          <div>
+            <h2>This is another Section</h2>
+            <p>Lorem ipsum dolor sit amet 
+              consectetur adipisicing elit. Maxime soluta 
+              asperiores neque enim, nulla repellendus sunt aliquam,
+               mollitia ad, tempora sapiente recusandae eos laborum 
+               voluptates quod sint? Accusamus, corporis reiciendis!</p>
+          </div>
+          <div>
+            <h1>Aside</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam sunt
+              velit similique dolores a itaque! Perferendis illo totam earum
+              magni quas esse a numquam ab necessitatibus. Qui repellat nesciunt
+              fuga!
+            </p>
+          </div>
+        </div>
+        <footer>
+          <h2>This is footer</h2>
+          <div class="footer_section">
+            <div>This is section one</div>
+            <div>This is section two</div>
+          </div>
+          <div class="copyright"><p>All Copyrights received</p></div>
+        </footer>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
