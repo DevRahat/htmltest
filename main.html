@@ -12,7 +12,7 @@
         background-size: cover;
         background-position: center;
         display: flex;
-        justify-content: center; /* horizontal center */
+        justify-content:center; /* horizontal center */
         align-items: center; /* vertical center */
       }
       .main_section {
@@ -26,6 +26,12 @@
         border-radius: 20px;
         width: 50%;
       }
+      .header{
+        display: flex;
+        gap: 10px;
+      }
+       
+      
       #navbar {
         display: flex;
         gap: 40px;
@@ -34,6 +40,7 @@
         justify-content: center;
         align-items: center;
       }
+      
       .footer_section {
         display: flex;
         gap: 20px;
@@ -43,13 +50,19 @@
         text-align: center;
         margin-top: 10px;
       }
+     
     </style>
   </head>
 
   <body>
     <div class="hero">
       <div class="content-box">
-        <header>This is Header</header>
+
+        <div class="header">
+          <div>This is logo</div>
+          <div>This is header</div>
+          
+        </div>        
         <nav id="navbar">
           <div>Home</div>
           <div>About</div>
